@@ -25,6 +25,11 @@ return require('packer').startup(function(use)
           }
       end
   })
+  use {
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2",
+      dependecies = { "nvim-lua/plenary.nvim" }
+  }
   use("folke/tokyonight.nvim")
   use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
   use 'nvim-tree/nvim-tree.lua'
